@@ -1,0 +1,32 @@
+
+Data: 07/03/2017
+
+1. O que são sistemas embarcados?
+
+	São sistemas compostos por hardware e software que realizam uma tarefa específica. No hardware um sistema embarcado contém sistemas eleletrônicos que re
+
+2. O que são sistemas microprocesssados?
+
+	É um sistema composto por periféricos e por uma unidade de processamento. A unidade de processamento controla os perféricos para fazer uma interface com 
+
+3. Apresente aplicações de sistemas embarcados:
+
+	(a) Para a indústria automotiva;
+
+	Sistema anti-colisão de veículos, airbag, controle de frenagem, controle de consumo de combustível e etc.
+
+	(b) Para eletrodomésticos;
+
+	Controle de temperatura, velocidade,
+
+	(c) Para automação industrial.
+
+	Processos de montagem de produtos, esteiras, controle de variáveis físicas do processo de produção como temperatura, umidade e etc.
+
+4. Cite arquiteturas possíveis e as diferenças entre elas.
+	São possíveis arquieturas: Controle, Sinais e Comunicação.
+	Controle: Implementação de sistemas que são capazes de realizar arquiteturas de controle como o controle de temperatura.
+	Processamento de sinais: Sistemas com a finalidade de aquisição e processamento de sinais, parte existente em sistemas de controle, porém, tem como finalidade não interferir no processo.
+	Ssitemas de comunicação possuem sistemas que controlam em que canal ocorre a comunicação.
+5. Por que usamos o Raspberry Pi na disciplina, ao invés de outro system-on-chip?
+Pela acessibilidade, quantidade de informações sobre o produto disponíveis bem como o tamanho da comunidade de desenvolvedores. E também por ser um sistema de propósito geral.
