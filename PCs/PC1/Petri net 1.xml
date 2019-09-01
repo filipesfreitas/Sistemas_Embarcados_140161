@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+    <net id="Net-One" type="P/T net">
+        <token id="Default" enabled="true" red="0" green="0" blue="0"/>
+        <place id="Abrir valvulas">
+            <graphics>
+                <position x="600.0" y="360.0"/>
+            </graphics>
+            <name>
+                <value>Abrir valvulas</value>
+                <graphics>
+                    <offset x="110.0" y="6.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Água fria">
+            <graphics>
+                <position x="525.0" y="420.0"/>
+            </graphics>
+            <name>
+                <value>Água fria</value>
+                <graphics>
+                    <offset x="9.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Água quente">
+            <graphics>
+                <position x="525.0" y="375.0"/>
+            </graphics>
+            <name>
+                <value>Água quente</value>
+                <graphics>
+                    <offset x="47.0" y="-5.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Audio">
+            <graphics>
+                <position x="510.0" y="225.0"/>
+            </graphics>
+            <name>
+                <value>Audio</value>
+                <graphics>
+                    <offset x="14.0" y="-2.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="escuta">
+            <graphics>
+                <position x="375.0" y="285.0"/>
+            </graphics>
+            <name>
+                <value>escuta</value>
+                <graphics>
+                    <offset x="18.0" y="-2.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Inicio">
+            <graphics>
+                <position x="270.0" y="285.0"/>
+            </graphics>
+            <name>
+                <value>Inicio</value>
+                <graphics>
+                    <offset x="36.0" y="-4.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Sistema PID ">
+            <graphics>
+                <position x="435.0" y="330.0"/>
+            </graphics>
+            <name>
+                <value>Sistema PID </value>
+                <graphics>
+                    <offset x="63.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Stand By">
+            <graphics>
+                <position x="180.0" y="285.0"/>
+            </graphics>
+            <name>
+                <value>Stand By</value>
+                <graphics>
+                    <offset x="29.0" y="-5.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Voz - Texto">
+            <graphics>
+                <position x="555.0" y="270.0"/>
+            </graphics>
+            <name>
+                <value>Voz - Texto</value>
+                <graphics>
+                    <offset x="101.0" y="33.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <transition id="">
+            <graphics>
+                <position x="315.0" y="285.0"/>
+            </graphics>
+            <name>
+                <value/>
+                <graphics>
+                    <offset x="40.0" y="48.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="API fala em texto">
+            <graphics>
+                <position x="555.0" y="225.0"/>
+            </graphics>
+            <name>
+                <value>API fala em texto</value>
+                <graphics>
+                    <offset x="103.0" y="-5.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Desliga Aparelho">
+            <graphics>
+                <position x="720.0" y="270.0"/>
+            </graphics>
+            <name>
+                <value>Desliga Aparelho</value>
+                <graphics>
+                    <offset x="115.0" y="22.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="fim comando">
+            <graphics>
+                <position x="375.0" y="330.0"/>
+            </graphics>
+            <name>
+                <value>fim comando</value>
+                <graphics>
+                    <offset x="32.0" y="41.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Ligar">
+            <graphics>
+                <position x="225.0" y="285.0"/>
+            </graphics>
+            <name>
+                <value>Ligar</value>
+                <graphics>
+                    <offset x="29.0" y="41.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Microfone">
+            <graphics>
+                <position x="465.0" y="285.0"/>
+            </graphics>
+            <name>
+                <value>Microfone</value>
+                <graphics>
+                    <offset x="29.0" y="-6.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Sensor">
+            <graphics>
+                <position x="435.0" y="375.0"/>
+            </graphics>
+            <name>
+                <value>Sensor</value>
+                <graphics>
+                    <offset x="5.0" y="34.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="temperatura">
+            <graphics>
+                <position x="555.0" y="315.0"/>
+            </graphics>
+            <name>
+                <value>temperatura</value>
+                <graphics>
+                    <offset x="100.0" y="10.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Termino banho">
+            <graphics>
+                <position x="720.0" y="225.0"/>
+            </graphics>
+            <name>
+                <value>Termino banho</value>
+                <graphics>
+                    <offset x="102.0" y="-1.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Valvula">
+            <graphics>
+                <position x="600.0" y="405.0"/>
+            </graphics>
+            <name>
+                <value>Valvula</value>
+                <graphics>
+                    <offset x="49.0" y="52.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <arc id="Abrir valvulas to Valvula" source="Abrir valvulas" target="Valvula">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="612" y="386" curvePoint="false"/>
+            <arcpath id="001" x="612" y="402" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Água fria to Sensor" source="Água fria" target="Sensor">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="522" y="432" curvePoint="false"/>
+            <arcpath id="001" x="447" y="432" curvePoint="false"/>
+            <arcpath id="002" x="447" y="402" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Água quente to Sensor" source="Água quente" target="Sensor">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="522" y="387" curvePoint="false"/>
+            <arcpath id="001" x="451" y="387" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="API fala em texto to Voz - Texto" source="API fala em texto" target="Voz - Texto">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="567" y="252" curvePoint="false"/>
+            <arcpath id="001" x="567" y="267" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Audio to API fala em texto" source="Audio" target="API fala em texto">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="536" y="237" curvePoint="false"/>
+            <arcpath id="001" x="561" y="237" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Desliga Aparelho to Stand By" source="Desliga Aparelho" target="Stand By">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="732" y="297" curvePoint="false"/>
+            <arcpath id="001" x="733" y="463" curvePoint="false"/>
+            <arcpath id="002" x="193" y="463" curvePoint="false"/>
+            <arcpath id="003" x="192" y="311" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="escuta to Microfone" source="escuta" target="Microfone">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="401" y="297" curvePoint="false"/>
+            <arcpath id="001" x="471" y="297" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="fim comando to escuta" source="fim comando" target="escuta">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="387" y="327" curvePoint="false"/>
+            <arcpath id="001" x="387" y="311" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Inicio to " source="Inicio" target="">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="296" y="297" curvePoint="false"/>
+            <arcpath id="001" x="321" y="297" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Ligar to Inicio" source="Ligar" target="Inicio">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="241" y="297" curvePoint="false"/>
+            <arcpath id="001" x="267" y="297" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Microfone to Audio" source="Microfone" target="Audio">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="481" y="297" curvePoint="false"/>
+            <arcpath id="001" x="507" y="297" curvePoint="false"/>
+            <arcpath id="002" x="522" y="297" curvePoint="false"/>
+            <arcpath id="003" x="522" y="252" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Sensor to Sistema PID " source="Sensor" target="Sistema PID ">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="447" y="372" curvePoint="false"/>
+            <arcpath id="001" x="447" y="356" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Sistema PID  to fim comando" source="Sistema PID " target="fim comando">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="432" y="342" curvePoint="false"/>
+            <arcpath id="001" x="391" y="342" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Stand By to Ligar" source="Stand By" target="Ligar">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="206" y="297" curvePoint="false"/>
+            <arcpath id="001" x="231" y="297" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="temperatura to Abrir valvulas" source="temperatura" target="Abrir valvulas">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="571" y="327" curvePoint="false"/>
+            <arcpath id="001" x="601" y="360" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="temperatura to Sistema PID " source="temperatura" target="Sistema PID ">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="561" y="327" curvePoint="false"/>
+            <arcpath id="001" x="522" y="327" curvePoint="false"/>
+            <arcpath id="002" x="507" y="342" curvePoint="false"/>
+            <arcpath id="003" x="462" y="342" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Termino banho to escuta" source="Termino banho" target="escuta">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="732" y="222" curvePoint="false"/>
+            <arcpath id="001" x="732" y="192" curvePoint="false"/>
+            <arcpath id="002" x="492" y="192" curvePoint="false"/>
+            <arcpath id="003" x="397" y="286" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id=" to escuta" source="" target="escuta">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="331" y="297" curvePoint="false"/>
+            <arcpath id="001" x="372" y="297" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Valvula to Água fria" source="Valvula" target="Água fria">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="606" y="422" curvePoint="false"/>
+            <arcpath id="001" x="582" y="432" curvePoint="false"/>
+            <arcpath id="002" x="552" y="432" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Valvula to Água quente" source="Valvula" target="Água quente">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="607" y="412" curvePoint="false"/>
+            <arcpath id="001" x="582" y="387" curvePoint="false"/>
+            <arcpath id="002" x="582" y="387" curvePoint="false"/>
+            <arcpath id="003" x="552" y="387" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Voz - Texto to Desliga Aparelho" source="Voz - Texto" target="Desliga Aparelho">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="581" y="282" curvePoint="false"/>
+            <arcpath id="001" x="726" y="282" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Voz - Texto to temperatura" source="Voz - Texto" target="temperatura">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="567" y="296" curvePoint="false"/>
+            <arcpath id="001" x="567" y="312" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Voz - Texto to Termino banho" source="Voz - Texto" target="Termino banho">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="579" y="274" curvePoint="false"/>
+            <arcpath id="001" x="642" y="237" curvePoint="false"/>
+            <arcpath id="002" x="726" y="237" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+    </net>
+</pnml>
