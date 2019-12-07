@@ -1,0 +1,45 @@
+1. Considerando a biblioteca-padrão da linguagem C, responda:
+
+(a) Quais são as funções (e seus protótipos) para abrir e fechar arquivos?
+       FILE *fopen(const char *pathname, const char *mode);
+
+       FILE *fdopen(int fd, const char *mode);
+
+       FILE *freopen(const char *pathname, const char *mode, FILE *stream);
+(b) Quais são as funções (e seus protótipos) para escrever em arquivos?
+
+       size_t fwrite(const void *ptr, size_t size, size_t nmemb,
+                     FILE *stream);
+
+(c) Quais são as funções (e seus protótipos) para ler arquivos?
+       size_t fread(void *ptr, size_t size, size_t nmemb, FILE *stream);
+
+(d) Quais são as funções (e seus protótipos) para reposicionar um ponteiro para arquivo?
+       int fseek(FILE *stream, long offset, int whence);
+
+       long ftell(FILE *stream);
+
+       void rewind(FILE *stream);
+
+       int fgetpos(FILE *stream, fpos_t *pos);
+
+       int fsetpos(FILE *stream, const fpos_t *pos);
+
+
+(e) Quais bibliotecas devem ser incluídas no código para poder utilizar as funções acima?
+stdio.h
+2. O que é a norma POSIX?
+	Norma elaborada para o hardware. Tem o intuito de ser mais ssimples mais rápida.
+3. Considerando a norma POSIX, responda:
+
+(a) Quais são as funções (e seus protótipos) para abrir e fechar arquivos?
+	ssize_t open(char *nome_arquivo,int modo);
+		int close(int arquivo_aberto);
+(b) Quais são as funções (e seus protótipos) para escrever em arquivos?
+		ssize_t write(int arquivo_aberto, void *buffer, size_t bytes_a_serem_lidos);
+(c) Quais são as funções (e seus protótipos) para ler arquivos?
+	ssize_t read(int arquivo_aberto, void *buffer, size_t bytes_a_serem_lidos);
+(d) Quais são as funções (e seus protótipos) para reposicionar um ponteiro para arquivo?
+	off_t lseek(int arquivo_aberto, off_t offset, int modo);
+(e) Quais bibliotecas devem ser incluídas no código para poder utilizar as funções acima?
+	fcntl.h, unistd.h e termios.h
