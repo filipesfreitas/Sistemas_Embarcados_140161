@@ -1,8 +1,7 @@
 1. Por que o Linux recebeu esse nome?
 	Por causa do seu criador Linus+Unix que é o sistema em que foi baseado
 2. O que são daemons?
-	
-
+	COntrola, inicia ou para um serviço provido pelo sistema
 3. O que é o shell?
 	Sheel é um programa com interface de comandos para o o sistema linux.
 4. Por que é importante evitar executar o terminal como super-usuário?

@@ -1,0 +1,10 @@
+O makefile apresentadoa aqui consiste de uma automação do processo de compilação e testes básicos ( e.g executar com casos testes em arquivos)
+segindo a estrutura de diretórios:
+
+LIB = /include  		-> arquivos .h/ cabeçalhos
+BIN = /bin       		-> arquivo principal executável  
+CASES_TESTS = /cases_tests 	-> arquivos contendo casos de teste para o programa,
+			           aqui será inserido um script e arquivos txt contendo casos de teste para o programa em questão
+OUTPUTS = /obj       		-> arquivos de cabeçalhos/bibliotecas compilados
+SOURCE = /src		        -> arquivos .c contendo o codigo fonte
+
